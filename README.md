@@ -1,4 +1,4 @@
-# does Jev understand colour?
+# "does Jev understand colour?" — an unofficial recreation
 
 Type a word. A small, fast model weighs it against sixteen fixed colours, and the bar is that
 weighting drawn to scale — widest first.
@@ -15,7 +15,9 @@ Live: **https://jev-colour.zammitpaul.com**
 [in a reply](https://x.com/mattdesl/status/2100907712984883362), a sentence saying how it worked —
 sixteen predefined colours, "just rendering their weighted probabilities", pointing at the palette file
 below. He linked no source, so I built this one from that sentence, to have it live on a page anyone can
-type into. He has no involvement in it and has not endorsed it. (He later confirmed the bands in his own
+type into. The wording of the question, the 0.05% cutoff and calling the palette's `background` beige are
+my decisions, not his; he has no involvement in this page and has not endorsed it. (He later confirmed the
+bands in his own
 version are ["just ordered by probability"](https://x.com/mattdesl/status/2100952454816813450), which is
 what this does too.)
 

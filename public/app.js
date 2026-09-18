@@ -1,5 +1,5 @@
 // Type, wait a beat, ask Jev once, draw the answer. One band per palette colour, always in the
-// DOM: the widths animate, the order jumps, which is what the original demo looks like.
+// DOM: widths animate, flex order follows rank.
 
 const input = document.querySelector('#phrase')
 const bar = document.querySelector('#bar')

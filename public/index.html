@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>does Jev understand colour?</title>
+    <title>does Jev understand colour? · an unofficial recreation</title>
     <meta name="description" content="Type a word. A small, fast model weighs it against sixteen fixed colours, and the bar is that weighting drawn to scale." />
     <meta name="color-scheme" content="light" />
-    <meta property="og:title" content="does Jev understand colour?" />
+    <meta property="og:title" content="does Jev understand colour? · an unofficial recreation of @mattdesl's demo" />
     <meta property="og:description" content="Type a word. The bar is Jev's probabilities over sixteen fixed colours." />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='8' y='8' fill='%23dd1706'/%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='8' y='8' fill='%23111'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="/style.css?v=5" />
   </head>
   <body>
@@ -39,21 +39,23 @@
       <button id="about-open" class="about-open" aria-expanded="false" aria-controls="about">about</button>
     </nav>
     <section id="about" class="about" hidden>
-      <h1>does Jev understand colour?</h1>
+      <h1>&ldquo;does Jev understand colour?&rdquo; &mdash; an unofficial recreation</h1>
       <p>
         <strong>The idea is Matt DesLauriers'</strong> — <a href="https://x.com/mattdesl">@mattdesl</a> on X,
         <a href="https://github.com/mattdesl">mattdesl</a> on GitHub. He
         <a href="https://x.com/mattdesl/status/2100899669802963060">posted it on 18 September 2026</a>: a text
         field, a bar of colour, and a sentence saying how it worked — sixteen predefined colours, "just
         rendering their weighted probabilities". He linked no source, so I built this one from that
-        sentence, to have it live on a page anyone can type into. He has no involvement in it and has not
-        endorsed it.
+        sentence, to have it live on a page anyone can type into. The wording of the question, the 0.05%
+        cutoff, and calling the palette's <code>background</code> beige are my decisions, not his. He has no
+        involvement in this page and has not endorsed it.
       </p>
       <p>
         Type a word. It goes to <a href="https://typesafe.ai">Jev</a>, TypeSafe AI's System One model, as a
         single typed question with sixteen options. Jev cannot write a word back: it returns a probability
         for each option. The bar is those probabilities, widest first — no colour maths, no palette logic,
-        no second model. Hover a band to see which colour it is and how much Jev gave it.
+        no second model. All code does to the answer is drop anything under 0.05% and renormalise the rest.
+        Hover a band to see which colour it is and how much Jev gave it.
       </p>
       <p>
         The sixteen colours are borrowed with thanks from
