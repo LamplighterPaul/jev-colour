@@ -7,18 +7,19 @@ Live: **https://jev-colour.zammitpaul.com**
 
 ![the page answering "london pub at night"](docs/london-pub.png)
 
-## Where this came from
+## Whose idea this is
 
-On 18 September 2026 Matt DesLauriers [posted a demo](https://x.com/mattdesl/status/2100899669802963060)
-asking whether Jev understands colour, and in
-[a reply](https://x.com/mattdesl/status/2100907712984883362) said how it worked: sixteen predefined
-colours, "just rendering their weighted probabilities", pointing at the palette file below. He linked no
-source, so this is that sentence written out — a separate implementation, and mine, including anything
-about it that is wrong. (He later confirmed the bands in his own version are
-["just ordered by probability"](https://x.com/mattdesl/status/2100952454816813450), which is what this
-does too.) He has no involvement in this page and has not endorsed it.
+**The idea is Matt DesLauriers'** — [@mattdesl](https://x.com/mattdesl) on X,
+[mattdesl](https://github.com/mattdesl) on GitHub. On 18 September 2026 he
+[posted it](https://x.com/mattdesl/status/2100899669802963060): a text field, a bar of colour, and,
+[in a reply](https://x.com/mattdesl/status/2100907712984883362), a sentence saying how it worked —
+sixteen predefined colours, "just rendering their weighted probabilities", pointing at the palette file
+below. He linked no source, so I built this one from that sentence, to have it live on a page anyone can
+type into. He has no involvement in it and has not endorsed it. (He later confirmed the bands in his own
+version are ["just ordered by probability"](https://x.com/mattdesl/status/2100952454816813450), which is
+what this does too.)
 
-The sixteen colours are borrowed, with thanks, from
+The sixteen colours are borrowed with thanks from
 [`docs/palette.md`](https://github.com/mattdesl/bitframes/blob/main/docs/palette.md) in
 [Bitframes](https://bitframes.io) — a 2024 generative-art project of his, MIT licensed. Sixteen colour
 values in [`palette.js`](palette.js) are all this takes: the sRGB hex as published, and the same

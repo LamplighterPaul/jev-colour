@@ -1,4 +1,5 @@
-// The sixteen colours are not ours. They are the "Colorful" palette (system 0x00) published as
+// The sixteen colours are not ours. The idea is not ours either: both come from Matt DesLauriers
+// (@mattdesl on X, mattdesl on GitHub). This is the "Colorful" palette (system 0x00) published as
 // docs/palette.md in Matt DesLauriers' Bitframes, a generative-art project of his:
 //
 //   https://github.com/mattdesl/bitframes/blob/main/docs/palette.md

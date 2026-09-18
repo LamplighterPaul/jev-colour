@@ -9,7 +9,7 @@
     <meta property="og:title" content="does Jev understand colour?" />
     <meta property="og:description" content="Type a word. The bar is Jev's probabilities over sixteen fixed colours." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='8' y='8' fill='%23dd1706'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="/style.css?v=4" />
+    <link rel="stylesheet" href="/style.css?v=5" />
   </head>
   <body>
     <main>
@@ -32,45 +32,46 @@
     <p id="note" class="note" role="status"></p>
 
     <nav class="credit">
-      <a href="https://x.com/mattdesl/status/2100899669802963060">after @mattdesl</a>
-      <a href="https://github.com/mattdesl/bitframes/blob/main/docs/palette.md">the palette</a>
-      <a href="https://zammitpaul.com/about">site by Paul Zammit</a>
-      <a href="https://github.com/LamplighterPaul/jev-colour">LamplighterPaul/jev-colour</a>
+      <a href="https://x.com/mattdesl">idea by @mattdesl</a>
+      <a href="https://github.com/mattdesl/bitframes/blob/main/docs/palette.md">his palette</a>
+      <a href="https://zammitpaul.com/about">built by Paul Zammit</a>
+      <a href="https://github.com/LamplighterPaul/jev-colour">source</a>
       <button id="about-open" class="about-open" aria-expanded="false" aria-controls="about">about</button>
     </nav>
     <section id="about" class="about" hidden>
       <h1>does Jev understand colour?</h1>
       <p>
+        <strong>The idea is Matt DesLauriers'</strong> — <a href="https://x.com/mattdesl">@mattdesl</a> on X,
+        <a href="https://github.com/mattdesl">mattdesl</a> on GitHub. He
+        <a href="https://x.com/mattdesl/status/2100899669802963060">posted it on 18 September 2026</a>: a text
+        field, a bar of colour, and a sentence saying how it worked — sixteen predefined colours, "just
+        rendering their weighted probabilities". He linked no source, so I built this one from that
+        sentence, to have it live on a page anyone can type into. He has no involvement in it and has not
+        endorsed it.
+      </p>
+      <p>
         Type a word. It goes to <a href="https://typesafe.ai">Jev</a>, TypeSafe AI's System One model, as a
         single typed question with sixteen options. Jev cannot write a word back: it returns a probability
-        for each option. The bar is those probabilities, widest first. Nothing else decides anything —
-        there is no palette logic, no colour maths, no second model. Hover a band to see which colour it is
-        and how much Jev gave it.
+        for each option. The bar is those probabilities, widest first — no colour maths, no palette logic,
+        no second model. Hover a band to see which colour it is and how much Jev gave it.
       </p>
       <p>
-        The sixteen colours are borrowed, with thanks: they are the palette published as
-        <a href="https://github.com/mattdesl/bitframes/blob/main/docs/palette.md">docs/palette.md</a> in
-        Matt DesLauriers' <a href="https://bitframes.io">Bitframes</a>, a generative-art project of his from
-        2024, MIT licensed. Sixteen colour values are all this page takes; Bitframes itself is an artwork
-        encoded in 32 bytes and has nothing to do with language models.
+        The sixteen colours are borrowed with thanks from
+        <a href="https://github.com/mattdesl/bitframes/blob/main/docs/palette.md">docs/palette.md</a> in his
+        <a href="https://bitframes.io">Bitframes</a>, a generative-art project of his from 2024, MIT licensed.
+        Sixteen colour values are all this page takes; Bitframes itself is an artwork encoded in 32 bytes and
+        has nothing to do with language models.
       </p>
       <p>
-        The page exists because of
-        <a href="https://x.com/mattdesl/status/2100899669802963060">his demo on 18 September 2026</a> and his
-        own description of how it worked — sixteen predefined colours, "just rendering their weighted
-        probabilities". He linked no source, so everything here is written from that sentence and is mine,
-        including any part of it that is wrong. He has no involvement in this page and has not endorsed it;
-        it is not affiliated with TypeSafe AI either.
-      </p>
-      <p>
-        Source: <a href="https://github.com/LamplighterPaul/jev-colour">github.com/LamplighterPaul/jev-colour</a>.
         Built by <a href="https://zammitpaul.com/about">Paul Zammit</a>, alongside
         <a href="https://forma-experiment.zammitpaul.com">Forma</a>, a longer experiment in letting this model
-        make the decisions.
+        make the decisions. Source:
+        <a href="https://github.com/LamplighterPaul/jev-colour">github.com/LamplighterPaul/jev-colour</a>.
+        Not affiliated with TypeSafe AI.
       </p>
       <button id="about-close" class="about-close">close</button>
     </section>
 
-    <script type="module" src="/app.js?v=4"></script>
+    <script type="module" src="/app.js?v=5"></script>
   </body>
 </html>
