@@ -1,0 +1,33 @@
+# Example Kamal config. Copy to config/deploy.yml (git-ignored) and fill in your own host and domain.
+service: jev-colour
+image: jev-colour
+
+servers:
+  web:
+    hosts:
+      - 203.0.113.10
+
+proxy:
+  host: colour.example.com
+  app_port: 8080
+  ssl: true
+  healthcheck:
+    path: /up
+
+volumes:
+  - jev-colour-data:/data   # the daily spend counter survives deploys
+
+env:
+  clear:
+    DAILY_USD_CAP: 2        # new questions stop for the day once this much is spent
+  secret:
+    - TYPESAFE_API_KEY      # Jev by TypeSafe AI; without it the server serves labelled mock weights
+
+registry:
+  server: ghcr.io
+  username: your-user
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+builder:
+  arch: amd64

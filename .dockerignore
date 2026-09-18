@@ -1,0 +1,6 @@
+node_modules
+data
+docs
+config/deploy.yml
+.kamal
+.git
