@@ -9,24 +9,14 @@ Live: **https://jev-colour.zammitpaul.com**
 
 ## Whose idea this is
 
-**The idea is Matt DesLauriers'** — [@mattdesl](https://x.com/mattdesl) on X,
-[mattdesl](https://github.com/mattdesl) on GitHub. On 18 September 2026 he
-[posted it](https://x.com/mattdesl/status/2100899669802963060): a text field, a bar of colour, and,
-[in a reply](https://x.com/mattdesl/status/2100907712984883362), a sentence saying how it worked —
-sixteen predefined colours, "just rendering their weighted probabilities", pointing at the palette file
-below. He linked no source, so I built this one from that sentence, to have it live on a page anyone can
-type into. The wording of the question, the 0.05% cutoff and calling the palette's `background` beige are
-my decisions, not his; he has no involvement in this page and has not endorsed it. (He later confirmed the
-bands in his own
-version are ["just ordered by probability"](https://x.com/mattdesl/status/2100952454816813450), which is
-what this does too.)
-
-The sixteen colours are borrowed with thanks from
+**His idea, his colours.** Matt DesLauriers — [@mattdesl](https://x.com/mattdesl) on X,
+[mattdesl](https://github.com/mattdesl) on GitHub —
+[posted this on 18 September 2026](https://x.com/mattdesl/status/2100899669802963060) and
+[said how it worked](https://x.com/mattdesl/status/2100907712984883362): sixteen predefined colours,
+"just rendering their weighted probabilities". He linked no source, so I built a version that lives on a
+page you can type into. The sixteen colours are his too, from
 [`docs/palette.md`](https://github.com/mattdesl/bitframes/blob/main/docs/palette.md) in
-[Bitframes](https://bitframes.io) — a 2024 generative-art project of his, MIT licensed. Sixteen colour
-values in [`palette.js`](palette.js) are all this takes: the sRGB hex as published, and the same
-primaries in Display P3, drawn where the browser allows it. Bitframes itself is an artwork encoded in 32
-bytes and has nothing to do with language models.
+[Bitframes](https://bitframes.io) (MIT) — copied into [`palette.js`](palette.js), sRGB and Display P3.
 
 ## A test run
 
@@ -71,14 +61,10 @@ probabilities and cannot generate text. The whole page is one question ([`jev.js
 }
 ```
 
-The answer comes back as a probability per colour. That is the picture: no colour maths, no palette
-logic, no second model. A band is a colour's probability; the order is the ranking. The only thing code
-does to the answer is drop anything below 0.05% and renormalise the rest. Hover a band to see which
-colour it is and what it got.
-
-The options are the palette's own names, with one exception: its index 0 is called `background` in the
-spec — the beige of the paper — and Jev is shown it as `beige`, because `background` is not a colour a
-person would name.
+The answer comes back as a probability per colour, and that is the picture: a band is a colour's
+probability, the order is the ranking, and the only thing code does is drop anything below 0.05% and
+renormalise. The options are the palette's own names, except index 0, which the spec calls `background`
+(the beige of the paper) and Jev is shown as `beige`.
 
 Typical answers, and what they cost (Jev's input tokens at $0.042 per million):
 
@@ -118,5 +104,4 @@ copy it to `config/deploy.yml`, put `TYPESAFE_API_KEY` in `.kamal/secrets`, and 
 
 ## Licence
 
-MIT. The sixteen colour values in `palette.js` are from Bitframes, MIT,
-Copyright (c) 2024 Matt DesLauriers; everything else is Copyright (c) 2026 Paul Zammit.
+MIT. The sixteen colour values come from Bitframes by Matt DesLauriers, also MIT.

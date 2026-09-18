@@ -2,9 +2,8 @@
 // cannot generate text. One `choice` question over the 16 palette colours gives the whole page:
 // the answer is the distribution, and the bar is that distribution drawn to scale.
 //
-// This is the mechanism Matt DesLauriers described for his own demo — sixteen predefined colours,
-// "just rendering their weighted probabilities" — written out. He linked no source; this file is not
-// his code, and any judgement in the wording of the question below is mine.
+// The mechanism is Matt DesLauriers' — sixteen predefined colours, "just rendering their weighted
+// probabilities" — written out here because he linked no source.
 
 import { NAMES } from './palette.js'
 

@@ -1,17 +1,11 @@
-// The sixteen colours are not ours. The idea is not ours either: both come from Matt DesLauriers
-// (@mattdesl on X, mattdesl on GitHub). This is the "Colorful" palette (system 0x00) published as
-// docs/palette.md in Matt DesLauriers' Bitframes, a generative-art project of his:
+// The sixteen colours are Matt DesLauriers' — @mattdesl on X, mattdesl on GitHub. They are the
+// "Colorful" palette (system 0x00) of his Bitframes project, MIT licensed:
 //
 //   https://github.com/mattdesl/bitframes/blob/main/docs/palette.md
 //
-// MIT, Copyright (c) 2024 Matt DesLauriers. The sRGB hex values below are copied from that file.
-// The Display P3 values are the same primaries in that colour space, produced once by the palette
-// generator in the same repository (src/colors.js, getPalette({ colorSpace: 'display-p3' })) and
-// pasted here, so that this page draws what Bitframes draws without carrying any of its code.
-//
-// The names are the palette's own, in palette order, with one exception: index 0 is called
-// "background" in the spec — the beige of the paper — and is offered to Jev as "beige", because
-// "background" is not a colour anyone would name.
+// The sRGB hex is copied from that file; the Display P3 values are the same primaries in that space,
+// produced once by the palette generator in the same repository. The names are his too, except index 0,
+// which the spec calls "background" (the beige of the paper) and Jev is offered as "beige".
 
 /** @type {{ name: string, index: number, srgb: string, p3: string }[]} */
 export const COLOURS = [

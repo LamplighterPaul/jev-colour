@@ -4,7 +4,6 @@
   "private": true,
   "description": "Ask Jev what colour a phrase is, and draw the answer as its probabilities over sixteen fixed colours",
   "type": "module",
-  "license": "MIT",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"
